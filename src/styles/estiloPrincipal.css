@@ -17,13 +17,14 @@
     height: 100%;
     position: relative;
 }
-.areaConteudo01{
+.areaConteudo02{
     background-color: brown;
     display: flex;
     flex-direction: row;
 }
-.areaConteudo02{
+.areaConteudo01{
     background-color: blue;
+    
 }
 .capaMainTop{
     width: 100%;
@@ -41,34 +42,34 @@
     align-items: center;
     justify-content: center;
 }
-.div01Tela01{
+.div02Tela01{
     width: 50%;
     height: 100%;
     background-color: beige;
 }
-.div01Tela02{
+.div02Tela02{
     width: 50%;
     height: 100%;
     background-color: bisque;
 }
-.fotoAp01{
+.fotoAp02{
     width: 60%;
     height: 80%;
     background-color: black;
 }
-.area01Conteudo{
+.area02Conteudo{
     width: 90%;
     height: 90%;
     flex-direction: column;
 }
-.logo01{
+.logo02{
     width: 20%;
     margin-bottom: 10%;
 }
-.logo01>img{
+.logo02>img{
     width: 100%;
 }
-.titulo01{
+.titulo02{
     margin-bottom: 10%;
 }
 .      çsç,lpxo´.ol.ewpp.ik9jfdepcx.c789044m3wk9w78 yoctrgg8ugvn59 ocç.lw~z;
