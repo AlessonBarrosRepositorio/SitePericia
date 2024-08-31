@@ -56,6 +56,10 @@
     width: 60%;
     height: 80%;
     background-color: black;
+    border-radius: 10px;
+}
+.fotoAp02>img{
+    border-radius: 10px;
 }
 .area02Conteudo{
     width: 90%;
@@ -71,6 +75,11 @@
 }
 .titulo02{
     margin-bottom: 10%;
+}
+.titulo02>h1{
+    font-size: 200%;    
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
 }
 .lista-com-traco {
     list-style-type: none; /* Remove o estilo padrão */
@@ -99,3 +108,29 @@
     color: black;  /* Cor do traço */
     font-weight: bold; /* Deixa o traço em negrito, se desejado */
   }
+  .lista-centralizada li{
+    font-weight: bolder;
+  }
+  .texto02{
+    
+  }
+.texto02>h2{
+    font-size: 100%;
+    margin-bottom: 10%;
+    font-weight: bold;
+}
+.logo01{
+    width: 10%;
+    left: 2%;
+    top:2%;
+}
+.nave{
+    z-index: 99;
+    width: 60%;
+    height: 8%;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+    border-radius: 10px;
+    background-color: rgb(175, 175, 226);
+}
