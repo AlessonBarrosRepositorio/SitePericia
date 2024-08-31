@@ -72,4 +72,30 @@
 .titulo02{
     margin-bottom: 10%;
 }
-.      çsç,lpxo´.ol.ewpp.ik9jfdepcx.c789044m3wk9w78 yoctrgg8ugvn59 ocç.lw~z;
+.lista-com-traco {
+    list-style-type: none; /* Remove o estilo padrão */
+
+  }
+  
+  .lista-com-traco li::before {
+    content: "- "; /* Adiciona um traço antes de cada item */
+    color: black;  /* Cor do traço */
+    font-weight: bold; /* Deixa o traço em negrito, se desejado */
+  }
+  .lista-centralizada {
+    list-style-type: none;  /* Remove o estilo padrão */
+    padding: 0;
+    margin: 0 auto;  /* Centraliza a lista horizontalmente */
+    width: fit-content;  /* Define a largura da lista de acordo com o conteúdo */
+    text-align: left;  /* Garante que o texto dentro da lista esteja alinhado à esquerda */
+  }
+  
+  .lista-centralizada li {
+    margin-bottom: 10px;   /* Adiciona espaçamento entre os itens, se necessário */
+  }
+  
+  .lista-centralizada li::before {
+    content: "- "; /* Adiciona um traço antes de cada item */
+    color: black;  /* Cor do traço */
+    font-weight: bold; /* Deixa o traço em negrito, se desejado */
+  }
