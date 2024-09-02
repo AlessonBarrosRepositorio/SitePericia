@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            width: 1920px;
+            height: 820px;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .areaSlide {
+            position: relative; /* Adicionado para posicionar os botões de rolagem */
+            width: 1536px;
+            height: 500px;
+            overflow-x: auto; /* Permitir rolagem horizontal */
+            white-space: nowrap; /* Impedir que as cartas quebrem para uma nova linha */
+            display: flex;
+        }
+
+        .carta {
+            width: 363px;
+            height: 450px;
+            background-color: #ccc;
+            min-width: 363px; /* Define o tamanho mínimo de largura */
+            min-height: 450px; /* Define o tamanho mínimo de altura */
+            box-shadow: 1px 2px 6px black;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        .areaSlide::-webkit-scrollbar {
+            width: 12px; /* Largura da barra de rolagem */
+        }
+
+        .areaSlide::-webkit-scrollbar-thumb {
+            background-color: transparent; /* Cor da barra de rolagem */
+        }
+
+        .areaSlide::-webkit-scrollbar-track {
+            background-color: transparent; /* Cor do rastreador de rolagem (fundo da barra de rolagem) */
+        }
+
+        .areaSlide::-webkit-scrollbar-button {
+            background-color: transparent; /* Cor do botão de rolagem (seta para cima e para baixo) */
+        }
+
+                /* Estilos para os botões de rolagem */
+                .scroll-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999;
+            transition: background-color 0.3s; /* Transição suave de cor */
+        }
+
+        .scroll-btn:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo mais escura ao passar o mouse */
+        }
+
+        .scroll-left-btn {
+            left: 10px;
+        }
+
+        .scroll-right-btn {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="areaSlide" id="areaSlide">
+        <div class="carta" id="carta01">01</div>
+        <div class="carta">02</div>
+        <div class="carta">03</div>
+        <div class="carta">04</div>
+        <div class="carta">05</div>
+        <div class="carta">06</div>
+        <div class="carta">07</div>
+        <div class="carta">08</div>
+        <div class="carta">09</div>
+        <div class="carta">10</div>
+        <div class="carta">11</div>
+        <div class="carta">12</div>
+        <div class="carta">13</div>
+        <div class="carta">14</div>
+        <div class="carta">15</div>
+        <div class="carta">16</div>
+        <div class="carta">17</div>
+        <div class="carta">18</div>
+        <div class="carta">19</div>
+        <div class="carta">20</div>
+    </div>
+
+    <button class="scroll-btn scroll-left-btn" id="scrollLeftBtn">&lt;</button>
+    <button class="scroll-btn scroll-right-btn" id="scrollRightBtn">&gt;</button>
+
+    <script>
+const areaSlides = document.getElementById('areaSlide');
+
+// Função para duplicar o conteúdo para a direita
+function duplicateContentRight() {
+    const children = areaSlides.children;
+    const numChildren = children.length;
+    const clones = [];
+
+    // Clonar todos os elementos
+    for (let i = 0; i < numChildren; i++) {
+        const clone = children[i].cloneNode(true);
+        clones.push(clone);
+    }
+
+    // Adicionar clones à direita
+    for (let i = 0; i < clones.length; i++) {
+        areaSlides.appendChild(clones[i]);
+    }
+}
+
+// Função para duplicar o conteúdo para a esquerda
+function duplicateContentLeft() {
+    const children = areaSlides.children;
+    const numChildren = children.length;
+    const clones = [];
+
+    // Clonar todos os elementos
+    for (let i = 0; i < numChildren; i++) {
+        const clone = children[i].cloneNode(true);
+        clones.push(clone);
+    }
+
+    // Adicionar clones à esquerda
+    for (let i = clones.length - 1; i >= 0; i--) {
+        areaSlides.insertBefore(clones[i], children[0]);
+    }
+}
+
+// Função para centralizar a barra de rolagem
+function centerScroll() {
+    const totalWidth = areaSlides.scrollWidth;
+    const visibleWidth = areaSlides.clientWidth;
+    areaSlides.scrollLeft = (totalWidth - visibleWidth) / 2;
+}
+
+// Função para verificar a posição da rolagem e duplicar o conteúdo conforme necessário
+function checkScroll() {
+    const totalWidth = areaSlides.scrollWidth;
+    const visibleWidth = areaSlides.clientWidth;
+
+    // Se o usuário rolar para o final da direita, duplicar o conteúdo à direita
+    if (areaSlides.scrollLeft + visibleWidth >= totalWidth - 1) {
+        duplicateContentRight();
+    }
+
+    // Se o usuário rolar para o início da esquerda, duplicar o conteúdo à esquerda
+    if (areaSlides.scrollLeft <= 0) {
+        duplicateContentLeft();
+        // Reajustar a posição da rolagem para manter a continuidade
+        areaSlides.scrollLeft = areaSlides.scrollLeft + areaSlides.scrollWidth / 2;
+    }
+}
+
+// Chamando as funções para duplicar o conteúdo tanto para a direita quanto para a esquerda
+duplicateContentRight();
+duplicateContentLeft();
+
+// Centralizando a barra de rolagem após a duplicação
+centerScroll();
+
+// Adicionar evento de rolagem para verificar a posição
+areaSlides.addEventListener('scroll', checkScroll);
+
+    </script>
+    
+    
+    <script>
+        const areaSlide = document.getElementById('areaSlide');
+        const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+        const scrollRightBtn = document.getElementById('scrollRightBtn');
+        let isDragging = false;
+        let startX, scrollLeftDrag; // Renomeando scrollLeft para scrollLeftDrag
+        let middleScrollPos = null; // Variável para armazenar a posição da metade da barra de rolagem
+    
+        function scrollLeft() {
+            const targetScroll = Math.max(0, areaSlide.scrollLeft - 1531);
+            areaSlide.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+    
+        function scrollRight() {
+            const targetScroll = Math.min(areaSlide.scrollWidth - areaSlide.clientWidth, areaSlide.scrollLeft + 1531);
+            areaSlide.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+    
+        function rememberMiddleScrollPos() {
+            middleScrollPos = areaSlide.scrollWidth / 2;
+        }
+    
+        function scrollToMiddlePos() {
+            if (middleScrollPos !== null) {
+                areaSlide.scrollTo({
+                    left: middleScrollPos - areaSlide.clientWidth / 2,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    
+        scrollLeftBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            scrollLeft();
+        });
+    
+        scrollRightBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            scrollRight();
+        });
+    
+        areaSlide.addEventListener('mousedown', (event) => {
+            isDragging = true;
+            startX = event.pageX - areaSlide.offsetLeft;
+            scrollLeftDrag = areaSlide.scrollLeft; // Usando scrollLeftDrag em vez de scrollLeft
+        });
+    
+        areaSlide.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+    
+        areaSlide.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    
+        areaSlide.addEventListener('mousemove', (event) => {
+            if (!isDragging) return;
+            event.preventDefault();
+            const x = event.pageX - areaSlide.offsetLeft;
+            const walk = (x - startX) * 2; // Velocidade de rolagem
+            areaSlide.scrollLeft = scrollLeftDrag - walk; // Usando scrollLeftDrag
+        });
+    
+        areaSlide.addEventListener('scroll', () => {
+            const endReachedRight = areaSlide.scrollLeft === areaSlide.scrollWidth - areaSlide.clientWidth;
+            const endReachedLeft = areaSlide.scrollLeft === 0;
+    
+            if (endReachedRight || endReachedLeft) {
+                scrollToMiddlePos(); // Quando atingir o final, volte para o meio
+            }
+        });
+    
+        rememberMiddleScrollPos(); // Chama a função para lembrar a posição da metade da barra de rolagem
+    </script>
+    
+    
+    
+    
+</body>
+</html>
