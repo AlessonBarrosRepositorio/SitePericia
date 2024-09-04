@@ -134,3 +134,10 @@
     border-radius: 10px;
     background-color: rgb(175, 175, 226);
 }
+.areaConteudo03{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
