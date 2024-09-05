@@ -18,7 +18,6 @@
     position: relative;
 }
 .areaConteudo02{
-    background-color: brown;
     display: flex;
     flex-direction: row;
 }
@@ -85,35 +84,35 @@
     list-style-type: none; /* Remove o estilo padrão */
 
   }
-  
-  .lista-com-traco li::before {
-    content: "- "; /* Adiciona um traço antes de cada item */
-    color: black;  /* Cor do traço */
-    font-weight: bold; /* Deixa o traço em negrito, se desejado */
-  }
-  .lista-centralizada {
-    list-style-type: none;  /* Remove o estilo padrão */
-    padding: 0;
-    margin: 0 auto;  /* Centraliza a lista horizontalmente */
-    width: fit-content;  /* Define a largura da lista de acordo com o conteúdo */
-    text-align: left;  /* Garante que o texto dentro da lista esteja alinhado à esquerda */
-  }
-  
-  .lista-centralizada li {
-    margin-bottom: 10px;   /* Adiciona espaçamento entre os itens, se necessário */
-  }
-  
-  .lista-centralizada li::before {
-    content: "- "; /* Adiciona um traço antes de cada item */
-    color: black;  /* Cor do traço */
-    font-weight: bold; /* Deixa o traço em negrito, se desejado */
-  }
-  .lista-centralizada li{
-    font-weight: bolder;
-  }
-  .texto02{
-    
-  }
+
+.lista-com-traco li::before {
+content: "- "; /* Adiciona um traço antes de cada item */
+color: black;  /* Cor do traço */
+font-weight: bold; /* Deixa o traço em negrito, se desejado */
+}
+.lista-centralizada {
+list-style-type: none;  /* Remove o estilo padrão */
+padding: 0;
+margin: 0 auto;  /* Centraliza a lista horizontalmente */
+width: fit-content;  /* Define a largura da lista de acordo com o conteúdo */
+text-align: left;  /* Garante que o texto dentro da lista esteja alinhado à esquerda */
+}
+
+.lista-centralizada li {
+margin-bottom: 10px;   /* Adiciona espaçamento entre os itens, se necessário */
+}
+
+.lista-centralizada li::before {
+content: "- "; /* Adiciona um traço antes de cada item */
+color: black;  /* Cor do traço */
+font-weight: bold; /* Deixa o traço em negrito, se desejado */
+}
+.lista-centralizada li{
+font-weight: bolder;
+}
+.texto02{
+
+}
 .texto02>h2{
     font-size: 100%;
     margin-bottom: 10%;
@@ -173,4 +172,20 @@
     font-weight: 900;
     font-size: 120%;
     color: #fff;
+}
+
+.areaConteudo04{
+    display: flex;
+    flex-direction: row;
+}
+.div04Tela01{
+    width: 50%;
+    height: 100%;
+    
+    background-color: bisque;
+}
+.div04Tela02{
+    width: 50%;
+    height: 100%;
+    background-color: beige;
 }
