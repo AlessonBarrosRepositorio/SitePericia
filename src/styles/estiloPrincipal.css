@@ -145,7 +145,7 @@ font-weight: bolder;
 }
 .topArea03>h1{
     font-weight: bolder;
-    font-size: 400%;
+    font-size: 320%;
 }
 .bottomArea03{
     width: 100%;
@@ -157,7 +157,7 @@ font-weight: bolder;
 
 .bottomArea03>h2{
     font-size: 250%;
-    font-weight: 600;
+    font-weight:300%;
     position: absolute;
     top: 2%;
     
@@ -165,13 +165,19 @@ font-weight: bolder;
 
 .btnOrcamento{
     background-color: #00D757;
-    width: 10%;
+    width: 14%;
     height: 30%;
     border-radius: 20px;
     text-decoration: none;
-    font-weight: 900;
-    font-size: 120%;
+    font-weight: 600;
+    font-size: 100%;
     color: #fff;
+    position: absolute;
+    bottom: 15%;
+    padding:0 2% 0 2%;
+}
+.mBottom{
+    margin-bottom: 10%;
 }
 
 .areaConteudo04{
@@ -180,8 +186,7 @@ font-weight: bolder;
 }
 .div04Tela01{
     width: 50%;
-    height: 100%;
-    
+    height: 100%;    
     background-color: bisque;
 }
 .div04Tela02{
@@ -189,3 +194,26 @@ font-weight: bolder;
     height: 100%;
     background-color: beige;
 }
+.texto04>h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 250%;
+}
+.paragrafo04{
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+.paragrafo04>h4{
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    left:5%;
+
+}
+.paragrafo04>h5{
+    text-align: center;
+    font-weight: 700;
+    font-size: 180%;
+}
+
