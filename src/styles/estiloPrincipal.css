@@ -22,13 +22,11 @@
     flex-direction: row;
 }
 .areaConteudo01{
-    background-color: blue;
     
 }
 .capaMainTop{
     width: 100%;
     height: 60%;
-    background-color: black;
 }
 .Esquerda{
     left:0;
