@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px; /* Simulando uma página longa */
+        }
+
+        #dashboard {
+            margin-top: 1500px; /* Colocando a div mais embaixo */
+            height: 400px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="scrollToDashboard()">Descer para Dashboard</button>
+
+<div id="dashboard">
+    <h2>Dashboard</h2>
+    <p>Conteúdo da dashboard aqui...</p>
+</div>
+
+<script>
+    function scrollToDashboard() {
+        document.getElementById('dashboard').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>

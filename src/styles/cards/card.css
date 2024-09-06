@@ -37,6 +37,7 @@
     width: 50%; /* Defina a largura do elemento */
     margin: 0 auto; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto dentro do elemento */
+    font-size: 100%;
 }
 .imgCarta{
     width: 100%;
