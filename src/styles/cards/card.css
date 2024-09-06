@@ -26,6 +26,22 @@
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
+    position: relative;
+    display: flex;
+}
+.h2Carta{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    width: 50%; /* Defina a largura do elemento */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+}
+.imgCarta{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
 }
 .areaSlide::-webkit-scrollbar {
     width: 12px; /* Largura da barra de rolagem */

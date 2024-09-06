@@ -129,7 +129,7 @@ font-weight: bolder;
     right: 20%;
     top: 10%;
     border-radius: 10px;
-    background-color: rgb(175, 175, 226);
+    background-color: rgba(250, 225, 197,50%);
 }
 .areaConteudo03{
     flex-direction: column;
@@ -214,4 +214,41 @@ font-weight: bolder;
     font-weight: 700;
     font-size: 180%;
 }
+.div04Tela02Area{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.img04Tela02{
+    width: 40%;
+    height: 80%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px black;
+}
+.areaimg04Tela02{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
 
+}
+.textos04Tela02{
+    bottom: 10%;
+    width: 100%;
+    height: 50%;
+}
+.textos04Tela02>h1{
+    font-size: 200%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.textos04Tela02>p{
+    font-size: 100%;
+    font-weight: 600;
+    
+    margin-bottom: 5%;
+}
