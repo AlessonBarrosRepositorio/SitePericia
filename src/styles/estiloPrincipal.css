@@ -130,10 +130,43 @@ font-weight: bolder;
     top: 10%;
     border-radius: 10px;
     background-color: rgba(250, 225, 197,50%);
+
+}
+.navArea{
+   
+    width: 98%;
+    height: 98%;
+    flex-direction: row;
+}
+.btnNav01{
+    width: 20%;
+    height: 90%;
+    margin-left:2%;
+    margin-right:2%;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.btnNav01>b{
+    font-size: 100%;
+    font-weight: 700;
+    
 }
 .areaConteudo03{
     flex-direction: column;
     background-color: floralwhite;
+}
+.btnNav01>b{
+
+}
+.what01{
+    background-color: #00D757;
+}
+.what01>a{
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 600;
+    color: #fff;
+    
 }
 
 .topArea03{
