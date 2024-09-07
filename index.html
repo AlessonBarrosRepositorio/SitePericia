@@ -18,6 +18,7 @@
     <script src="./src/scripts/telaAjustavel.js" defer></script>
     <script src="./src/scripts/cardScript/btnCardNav.js" defer></script>
     <script src="./src/scripts/cardScript/multiplicarSlider.js" defer></script>
+    <script src="./src/scripts/focoNave.js" defer></script>
 </head>
 
 <body>
@@ -29,15 +30,15 @@
             <div class="textoArea01 absolute"></div>
             <nav class="nave absolute somb centro">
                 <div class="navArea centro">                    
-                    <div class="btnNav01 centro somb"><b>Quem Sou</b></div>
-                    <div class="btnNav01 centro somb"><b>Serviços</b></div>
-                    <div class="btnNav01 centro somb"><b>Objetivo</b></div>
-                    <div class="btnNav01 centro somb what01"><a href="https://wa.me/+5521981377922">Fale Conosco</a></div>
+                    <div class="btnNav01 centro somb" onclick="quemSou()" ><b onclick="quemSou()">Quem Sou</b></div>
+                    <div class="btnNav01 centro somb" onclick="servico()"><b onclick="servico()">Serviços</b></div>
+                    <div class="btnNav01 centro somb" onclick="objetivo()"><b onclick="objetivo()">Objetivo</b></div>
+                    <div class="btnNav01 centro somb what01"><a href="https://wa.me/+5521981377922" class="centro">Fale Conosco</a></div>
                 </div>                
             </nav>
             <img src="./src/midia/imgs/PrimeiraPagina/fundo/fundo01Cynthia.png" alt="" srcset="">
         </div>
-        <div class="areaConteudo02 bloco">
+        <div id="quemSou" class="areaConteudo02 bloco">
             <!--<div class="capaMainTop"></div>-->
             <div class="div02Tela01 centro">
                 <div class="area02Conteudo centro">
@@ -69,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="areaConteudo03 centro bloco">
+        <div id="servico" class="areaConteudo03 centro bloco">
             <div class="topArea03 centro"><h1>Essses São os Serviços que Ofereço:</h1></div>
             <div class="slide">
                 <div class="areaSlide" id="areaSlide">
@@ -167,7 +168,7 @@
                 <a href="https://wa.me/+5521981377922" class="btnOrcamento centro somb">Fale Conosco</a>
             </div>
         </div>
-        <div class="areaConteudo04 bloco">
+        <div id="objetivo" class="areaConteudo04 bloco">
             <div class="div04Tela01 centro">
                 <div class="divImg04Tela1 "></div>
                 <div class="texto04">

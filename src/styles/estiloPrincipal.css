@@ -129,7 +129,7 @@ font-weight: bolder;
     right: 20%;
     top: 10%;
     border-radius: 10px;
-    background-color: rgba(250, 225, 197,50%);
+    background-color: rgba(250, 225, 197,80%);
 
 }
 .navArea{
@@ -139,25 +139,26 @@ font-weight: bolder;
     flex-direction: row;
 }
 .btnNav01{
-    width: 20%;
+    width: 28%;
     height: 90%;
     margin-left:2%;
     margin-right:2%;
     background-color: bisque;
     border-radius: 10px;
 }
+.btnNav01:hover{
+    cursor: pointer;
+}
 .btnNav01>b{
     font-size: 100%;
     font-weight: 700;
-    
+
 }
 .areaConteudo03{
     flex-direction: column;
     background-color: floralwhite;
 }
-.btnNav01>b{
 
-}
 .what01{
     background-color: #00D757;
 }
@@ -166,6 +167,9 @@ font-weight: bolder;
     font-size: 100%;
     font-weight: 600;
     color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     
 }
 
