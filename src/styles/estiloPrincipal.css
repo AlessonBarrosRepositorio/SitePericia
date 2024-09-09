@@ -25,6 +25,14 @@
     height: 46px;
     background-color: chocolate;
     border-radius: 50%;
+    
+}
+.btnHome:hover{
+    cursor: pointer;
+}
+.btnHome>img{
+    width: 80%;
+    height: 70%;
 }
 .btnWhats{
     position: absolute;
