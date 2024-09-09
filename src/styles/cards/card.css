@@ -37,7 +37,6 @@
     width: 50%; /* Defina a largura do elemento */
     margin: 0 auto; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto dentro do elemento */
-    font-size: 100%;
     width: 90%;
     height: 16%;
     background-color: chocolate;
@@ -47,7 +46,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 900;
-    font-size: 180%;
+    font-size: 120%;
     color:#fff;
     text-shadow: 1px 2px 6px black;
 }
