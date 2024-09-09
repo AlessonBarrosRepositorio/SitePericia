@@ -13,3 +13,8 @@ function objetivo() {
         behavior: 'smooth'
     });
 }
+function home() {
+    document.getElementById('home').scrollIntoView({
+        behavior: 'smooth'
+    });
+}

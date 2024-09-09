@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <script src="./src/scripts/cardScript/cacheStorage.js" defer></script>    
+
     <script src="./src/scripts/telaAjustavel.js" defer></script>
     <script src="./src/scripts/cardScript/btnCardNav.js" defer></script>
     <script src="./src/scripts/cardScript/multiplicarSlider.js" defer></script>
@@ -23,7 +25,7 @@
 
 <body>
     <div class="areaConteudo">
-        <div class="areaConteudo01 bloco">
+        <div id="home" class="areaConteudo01 bloco">
             <div class="logo01 absolute ">
                 <img src="./src/midia/imgs/SegundaPagina/lado01/logo.png" alt="" srcset="">
             </div>
@@ -33,13 +35,16 @@
                     <div class="btnNav01 centro somb" onclick="quemSou()" ><b onclick="quemSou()">Quem Sou</b></div>
                     <div class="btnNav01 centro somb" onclick="servico()"><b onclick="servico()">Serviços</b></div>
                     <div class="btnNav01 centro somb" onclick="objetivo()"><b onclick="objetivo()">Objetivo</b></div>
-                    <div class="btnNav01 centro somb what01"><a href="https://wa.me/+5521981377922" target="_blank"class="centro">Fale Conosco</a></div>
+                    <div class="btnNav01 centro somb what01 textSomb"><a href="https://wa.me/+5521981377922" target="_blank"class="centro">Fale Conosco</a></div>
                 </div>                
             </nav>
             <img src="./src/midia/imgs/PrimeiraPagina/fundo/fundo01Cynthia.png" alt="" srcset="">
         </div>
         <div id="quemSou" class="areaConteudo02 bloco">
             <!--<div class="capaMainTop"></div>-->
+
+            <div class="btnHome somb" onclick="home()"></div>            
+            <a href="https://wa.me/+5521981377922" class="btnWhats somb" target="_blank"><img src="" alt=""></a>
             <div class="div02Tela01 centro">
                 <div class="area02Conteudo centro">
                     <div class="logo02">
@@ -71,72 +76,74 @@
             </div>
         </div>
         <div id="servico" class="areaConteudo03 centro bloco">
+            <div class="btnHome somb" onclick="home()"></div>            
+            <a href="https://wa.me/+5521981377922" class="btnWhats somb" target="_blank"><img src="" alt=""></a>
             <div class="topArea03 centro"><h1>Essses São os Serviços que Ofereço:</h1></div>
             <div class="slide">
                 <div class="areaSlide" id="areaSlide">
                     <div class="carta" id="carta01">
-                        <img src="./src/midia/imgs/TerceiraPagina/assistenteTecnico.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882200/teste-link/xd90p4eelwkdcdmbxxpg.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             assistente técnico
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="./src/midia/imgs/TerceiraPagina/pericia.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882202/teste-link/c0zdhg54tfos2yquwbow.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             perícia Grafotécnica
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725885603/teste-link/k23wetcl7l7uhyifnyrw.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             autenticidade
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725885602/teste-link/eiumwtvldsdxbj0xenud.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             assinatura
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="./src/midia/imgs/TerceiraPagina/documentos.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882201/teste-link/gfiiuqei7eoa6jnzohie.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             documentos
                         </h2>
                     </div>
 
                     <div class="carta">
-                        <img src="./src/midia/imgs/TerceiraPagina/laudo.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882201/teste-link/pxpjaephtwonwe5oddvx.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             laudos técnicos
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="./src/midia/imgs/TerceiraPagina/documentos.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882200/teste-link/ypvev4uhpha7ix8exuao.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             análise de documentos
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="https://drive.google.com/uc?export=view&id=1eMrLBAwGWVMU0o7d20eDVToQfqGXFJlt" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882201/teste-link/ehpvf5hxndcvy6lkhexh.jpg" alt="fraude" class="imgCarta">
                         <h2 class="h2Carta">
                             fraude
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725885603/teste-link/wy02haibqlyxqxatzdam.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             falsificação
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="./src/midia/imgs/TerceiraPagina/parecerTecnico.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882201/teste-link/vahcxozvdddwdj2sbn9o.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             parecer técnico
                         </h2>
                     </div>
                     <div class="carta">
-                        <img src="./src/midia/imgs/TerceiraPagina/suporteTecnico.jpg" alt="" class="imgCarta">
+                        <img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725882202/teste-link/vtfurokuofvkkovrdlpo.jpg" alt="" class="imgCarta">
                         <h2 class="h2Carta">
                             suporte técnico
                         </h2>
@@ -149,10 +156,12 @@
             </div>
             <div class="bottomArea03 centro">
                 <h2>Solicite um Orçamento, atendimento 24 horas:</h2>
-                <a href="https://wa.me/+5521981377922" class="btnOrcamento centro somb" target="_blank">Fale Conosco</a>
+                <a href="https://wa.me/+5521981377922" class="btnOrcamento centro somb textSomb" target="_blank">Fale Conosco</a>
             </div>
         </div>
         <div id="objetivo" class="areaConteudo04 bloco">
+            <div class="btnHome somb" onclick="home()"></div>
+            <<a href="https://wa.me/+5521981377922" class="btnWhats somb" target="_blank"><img src="" alt=""></a>
             <div class="div04Tela01 centro">
                 <div class="divImg04Tela1 "></div>
                 <div class="texto04">

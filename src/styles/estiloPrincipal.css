@@ -17,6 +17,32 @@
     height: 100%;
     position: relative;
 }
+.btnHome{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 46px;
+    height: 46px;
+    background-color: chocolate;
+    border-radius: 50%;
+}
+.btnWhats{
+    position: absolute;
+    top: 8%;
+    right: 2%;
+    width: 46px;
+    height: 46px;
+    background-color: #00D757;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.btnWhats>img{
+    width: 100%;
+    height: 100%;
+}
+.textSomb{
+    text-shadow: 1px 2px 2px black;
+}
 .areaConteudo02{
     display: flex;
     flex-direction: row;
@@ -211,6 +237,9 @@ font-weight: bolder;
     bottom: 15%;
     padding:0 2% 0 2%;
 }
+#areaSlide {
+    will-change: transform, opacity;
+  }
 .mBottom{
     margin-bottom: 10%;
 }
