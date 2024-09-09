@@ -13,7 +13,7 @@ function calculateScrollStep() {
 function scrollLeft() {
     const scrollStep = calculateScrollStep();
     const targetScroll = Math.max(0, areaSlide.scrollLeft - scrollStep);
-    console.log('Scroll Left:', areaSlide.scrollLeft, '->', targetScroll);
+    //console.log('Scroll Left:', areaSlide.scrollLeft, '->', targetScroll);
     areaSlide.scrollTo({
         left: targetScroll,
         behavior: 'smooth'
@@ -23,7 +23,7 @@ function scrollLeft() {
 function scrollRight() {
     const scrollStep = calculateScrollStep();
     const targetScroll = Math.min(areaSlide.scrollWidth - areaSlide.clientWidth, areaSlide.scrollLeft + scrollStep);
-    console.log('Scroll Right:', areaSlide.scrollLeft, '->', targetScroll);
+    //console.log('Scroll Right:', areaSlide.scrollLeft, '->', targetScroll);
     areaSlide.scrollTo({
         left: targetScroll,
         behavior: 'smooth'
@@ -74,7 +74,7 @@ areaSlide.addEventListener('mousemove', (event) => {
     const x = event.pageX - areaSlide.offsetLeft;
     const walk = (x - startX) * 0.5; // Ajustando a velocidade de rolagem para ser mais suave
     areaSlide.scrollLeft = scrollLeftDrag - walk;
-    console.log('Dragging:', areaSlide.scrollLeft);
+    //console.log('Dragging:', areaSlide.scrollLeft);
 });
 /*
 // Reativando o retorno ao meio quando a rolagem atinge os extremos
