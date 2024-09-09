@@ -31,4 +31,5 @@ window.addEventListener('load', () => {
     } else {
         console.error('Cache Storage não é suportado neste navegador.');
     }
+
 });
