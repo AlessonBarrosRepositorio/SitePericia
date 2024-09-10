@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 4px;
+    
 }
 .areaSlide {
     position: relative; /* Adicionado para posicionar os botões de rolagem */
@@ -13,6 +15,9 @@
     height:100%;
     overflow-x: auto; /* Permitir rolagem horizontal */
     white-space: nowrap; /* Impedir que as cartas quebrem para uma nova linha */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+    border-radius: 4px;
     display: flex;
 }
 
@@ -56,6 +61,24 @@
     min-width: 100%;
     min-height: 100%;
     border-radius: 10px;
+}
+.areaEsfumadaEsquerda{
+    position: absolute;
+    left: 0;
+    width: 8%;
+    height: 100%;
+    background-image:linear-gradient(to right,black, #0000);
+    border-radius: 4px 0 0  4px;
+
+}
+.areaEsfumadaDireita{
+    position: absolute;
+    right: 0;
+    width: 8%;
+    height: 100%;
+    background-image:linear-gradient(to right, #0000, black);
+    border-radius: 0 4px 4px 0;
+
 }
 .areaSlide::-webkit-scrollbar {
     width: 12px; /* Largura da barra de rolagem */
