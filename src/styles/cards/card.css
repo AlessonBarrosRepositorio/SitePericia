@@ -24,7 +24,6 @@
 .carta {
     width: 30%;
     height: 40%;
-    background-color: #ccc;
     min-width: 28%; /* Define o tamanho mínimo de largura */
     min-height: 98%; /* Define o tamanho mínimo de altura */
     box-shadow: 1px 2px 6px black;
