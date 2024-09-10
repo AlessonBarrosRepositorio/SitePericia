@@ -4,6 +4,7 @@ const scrollRightBtn = document.getElementById('scrollRightBtn');
 let isDragging = false;
 let startX, scrollLeftDrag;
 let middleScrollPos = null;
+carregou = true;
 
 // Calcula o valor de rolagem com base em 20% da largura da área de rolagem
 function calculateScrollStep() {
@@ -88,4 +89,24 @@ areaSlide.addEventListener('scroll', () => {
 });*/
 
 // Chama a função para lembrar a posição da metade da barra de rolagem
+document.addEventListener('DOMContentLoaded', function() {
+
+    if(carregou == true){
+
+        const scrollStep = calculateScrollStep();
+        const targetScroll = Math.min(areaSlide.scrollWidth - areaSlide.clientWidth, areaSlide.scrollLeft + scrollStep);
+        //console.log('Scroll Right:', areaSlide.scrollLeft, '->', targetScroll);
+        areaSlide.scrollTo({
+            left: targetScroll,
+            behavior: 'smooth'
+        });
+
+        contCarregou =1
+    }if(contCarregou==1){
+        carregou=false
+    }
+    
+    
+
+});
 rememberMiddleScrollPos();

@@ -19,6 +19,7 @@
     -ms-overflow-style: none; /* Para Internet Explorer e Edge */
     border-radius: 4px;
     display: flex;
+    animation: scroll-horizontal 20s linear infinite;
 }
 
 .carta {
