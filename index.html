@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link rel="stylesheet" href="src/styles/cards/card.css">
+    <link id="cardCSS" rel="stylesheet" href="src/styles/cards/card.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -33,7 +33,7 @@
 
 <body>
     <div class="areaConteudo">
-        <div id="home" class="areaConteudo01 bloco02">
+        <div id="home" class="areaConteudo01 bloco bloco02">
             <div class="logo01 absolute hidden02">
                 <img src="./src/midia/imgs/SegundaPagina/lado01/logo.png" alt="" srcset="">
             </div>
@@ -79,13 +79,16 @@
                     </div>
                 </div>
             </div>
-            <div class="div02Tela02 centro">                
+            <div class="div02Tela02 centro"> 
+                <div class="btnHome noneMob centro hidden" onclick="home()"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924157/Sites/PericiaCynthia/icones/casaBranca.png" alt=""></div>            
+                <a href="https://wa.me/+5521981377922" class="btnWhats noneMob somb hidden" target="_blank"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924249/Sites/PericiaCynthia/icones/whatsBranco.png" alt=""></a>               
                 <div class="fotoAp02 somb hidden02">
                     <img src="./src/midia/imgs/SegundaPagina/lado02/cynthiaCorpo.png" alt="">
                 </div>
             </div>
         </div>
-        <div id="servico" class="areaConteudo03 centro bloco02">
+
+        <div id="servico" class="areaConteudo03 centro bloco bloco02">
             <div class="btnHome somb centro hidden" onclick="home()"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924157/Sites/PericiaCynthia/icones/casaBranca.png" alt=""></div>            
             <a href="https://wa.me/+5521981377922" class="btnWhats somb hidden" target="_blank"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924249/Sites/PericiaCynthia/icones/whatsBranco.png" alt=""></a>
             <div class="topArea03 centro"><h1>Essses São os Serviços que Ofereço:</h1></div>
@@ -106,30 +109,36 @@
             </div>
         </div>
         <div id="objetivo" class="areaConteudo04 bloco bloco02">
-            <div class="btnHome somb centro hidden" onclick="home()"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924157/Sites/PericiaCynthia/icones/casaBranca.png" alt=""></div>
-            <a href="https://wa.me/+5521981377922" class="btnWhats somb hidden" target="_blank"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924249/Sites/PericiaCynthia/icones/whatsBranco.png" alt=""></a>
+            <div class="btnHome somb centro noneDesk hidden" onclick="home()"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924157/Sites/PericiaCynthia/icones/casaBranca.png" alt=""></div>
+            <a href="https://wa.me/+5521981377922" class="btnWhats noneDesk somb hidden" target="_blank"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924249/Sites/PericiaCynthia/icones/whatsBranco.png" alt=""></a>
             <div class="div04Tela01 centro">
-                <div class="divImg04Tela1 "></div>
-                <div class="texto04">
-                    <h3 class="mBottom">Objetivo</h3>
-                    <div class="paragrafo04  centro">
-                        <h4 class="mBottom centro">
-                            Fornecer aos advogados e clientes um suporte técnico e profissional, ajudando-os a tomar decisões informadas em seus casos.
-                        </h4>
-                        <h5 class="mBottom">Meus serviços incluem:</h5>
-                        <ul class="mBottomlista-com-traco lista-centralizada">
-                            <li>Análise de assinaturas e escrita manual</li>
-                            <li>Análise de documentos digitais</li>
-                            <li>Identificação de documentos falsificados ou alterados</li>
-                            <li>Avaliação de documentos em casos de fraude e falsificação</li>
-                            <li>Elaboração de quesitos</li>
-                            <li>Preparação de parecer técnico</li>
-                            <li>Laudos grafotécnicos precisos e detalhados</li>
-                        </ul>
+                
+                <div class="divImg04Tela1 ">
+                    <div class="btnHome noneMob centro hidden" onclick="home()"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924157/Sites/PericiaCynthia/icones/casaBranca.png" alt=""></div>
+                    <a href="https://wa.me/+5521981377922" class="btnWhats noneMob somb hidden" target="_blank"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924249/Sites/PericiaCynthia/icones/whatsBranco.png" alt=""></a>
+                    <div class="texto04">
+                        <h3 class="mBottom">Objetivo</h3>
+                        <div class="paragrafo04  centro">
+                            <h4 class="mBottom centro">
+                                Fornecer aos advogados e clientes um suporte técnico e profissional, ajudando-os a tomar decisões informadas em seus casos.
+                            </h4>
+                            <h5 class="mBottom">Meus serviços incluem:</h5>
+                            <ul class="mBottomlista-com-traco lista-centralizada">
+                                <li>Análise de assinaturas e escrita manual</li>
+                                <li>Análise de documentos digitais</li>
+                                <li>Identificação de documentos falsificados ou alterados</li>
+                                <li>Avaliação de documentos em casos de fraude e falsificação</li>
+                                <li>Elaboração de quesitos</li>
+                                <li>Preparação de parecer técnico</li>
+                                <li>Laudos grafotécnicos precisos e detalhados</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="div04Tela02 centro">                
+            <div class="div04Tela02 centro">
+                <div class="btnHome noneMob centro hidden" onclick="home()"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924157/Sites/PericiaCynthia/icones/casaBranca.png" alt=""></div>
+                <a href="https://wa.me/+5521981377922" class="btnWhats noneMob somb hidden" target="_blank"><img src="https://res.cloudinary.com/dotl7tsgw/image/upload/v1725924249/Sites/PericiaCynthia/icones/whatsBranco.png" alt=""></a>                
                 <div class="div04Tela02Area">
                     <div class="areaimg04Tela02 centro hidden02">
                         <div class="img04Tela02"></div>

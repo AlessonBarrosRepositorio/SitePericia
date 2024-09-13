@@ -37,6 +37,19 @@ function ajustarTamanhoBody() {
             linkElement.href = linkElement.href.replace("estiloPrincipalM.css", "estiloPrincipal.css");
         }
     }
+      //----------------------------------------------------------------------------------------------
+        const cardCss = document.getElementById('cardCSS');
+        if (larguraJanela < alturaJanela) {
+            // Adiciona "M" ao nome do arquivo se não estiver presente
+            if (!cardCss.href.includes("cardM.css")) {
+                cardCss.href = cardCss.href.replace("card.css", "cardM.css");
+            }
+        } else {
+            // Remove "M" do nome do arquivo se estiver presente
+            if (cardCss.href.includes("cardM.css")) {
+                cardCss.href = cardCss.href.replace("cardM.css", "card.css");
+            }
+        }
 }
 
 // Chama a função ao carregar a página
