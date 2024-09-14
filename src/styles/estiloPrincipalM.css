@@ -90,6 +90,9 @@
     background-color: bisque;
     position: relative;
 }
+.diminuir>li{
+    font-size: 70%;
+}
 .fotoAp02{
     width: 60%;
     height: 80%;
@@ -134,7 +137,7 @@ list-style-type: none;  /* Remove o estilo padrão */
 padding: 0;
 margin: 0 auto;  /* Centraliza a lista horizontalmente */
 width: fit-content;  /* Define a largura da lista de acordo com o conteúdo */
-text-align: center;  /* Garante que o texto dentro da lista esteja alinhado à esquerda */
+text-align: left;  /* Garante que o texto dentro da lista esteja alinhado à esquerda */
 }
 
 .lista-centralizada li {
